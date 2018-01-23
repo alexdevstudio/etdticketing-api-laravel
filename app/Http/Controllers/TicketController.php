@@ -34,7 +34,7 @@ class TicketController extends Controller
        }else{
          return response()->json([
            'error' => true,
-           'message' =>  'You are not allowed to view this ticket.'
+           'message' =>  'Δεν μπορείτε να δείτε αυτό το αίτημα'
          ], 422);
        }
 
@@ -61,7 +61,7 @@ class TicketController extends Controller
             Mail::send('emails.backend.newTicket', $mailData, function ($message) use ($data) {
               $message->to('esupport@bluecdf.gr');
               $message->from('esupport@bluecdf.gr');
-              $message->subject('New Support Ticket: '.$data->user[0]->user_first_name.' '.$data->user[0]->user_last_name.' : '.$data->user[0]->office_name);
+              $message->subject('Νέο Αίτημα Υποστήριξης: '.$data->user[0]->user_first_name.' '.$data->user[0]->user_last_name.' : '.$data->user[0]->office_name);
            });
 
 

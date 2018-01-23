@@ -11,11 +11,11 @@ class Cors
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
-     * @return mixed
+     * @return mixed 
      */
     public function handle($request, Closure $next)
     {
-      $domains = ['http://localhost:8080'];
+      $domains = ['http://localhost:8080','https://esupport.bluecdf.gr'];
       if(isset($request->server()['HTTP_ORIGIN'])){
         $origin = $request->server()['HTTP_ORIGIN'];
         if(in_array($origin, $domains)){

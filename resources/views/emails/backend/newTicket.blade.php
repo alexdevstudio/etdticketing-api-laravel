@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>New Ticket Request</title>
+<title>Νέο Αίτημα Υποστήριξης</title>
 
 
 <style type="text/css">
@@ -72,7 +72,7 @@ background-color: #f6f6f6;
 										{{$data->user[0]->user_first_name.' '.$data->user[0]->user_last_name.' : '.$data->user[0]->office_name}}
 									</td>
 								</tr><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;"><td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-										Description: <?= $data->ticket_description ?>
+										Περιγραφή: <?= $data->ticket_description ?>
 									</td>
 								</tr>
                 </table></td>

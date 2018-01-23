@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>New Reply For Ticket: #{{$reply->ticket_reply_ticket_id}}</title>
+<title>Νέα Απάντηση Για Το Αίτημα: #{{$reply->ticket_reply_ticket_id}}</title>
 
 
 <style type="text/css">
@@ -72,7 +72,7 @@ background-color: #f6f6f6;
 										{{$user->user_first_name.' '.$user->user_last_name.' : '.$user->office_name}}
 									</td>
 								</tr><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;"><td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-										<strong>Reply:</strong> {{$reply->ticket_reply_text}}
+										<strong>Απάντηση:</strong> {{$reply->ticket_reply_text}}
 									</td>
 								</tr>
                 </table></td>

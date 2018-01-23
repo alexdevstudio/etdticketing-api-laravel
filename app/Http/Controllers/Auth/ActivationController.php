@@ -30,7 +30,7 @@ class ActivationController extends Controller
 
 
       return response()->json([
-        'message' => 'This code is not valid. Try contacting the support team to investigate this error.'
+        'message' => 'Ο κωδικός ενεργοποίησης δεν είναι έγκυρος. Επικοινωνήστε με το γραφείο Πληροφορικής για την επίλυση του ζητήματος '
       ], 401);
 
 

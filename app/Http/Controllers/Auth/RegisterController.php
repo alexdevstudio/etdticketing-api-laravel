@@ -26,7 +26,7 @@ class RegisterController extends Controller
           'user_password' => Hash::make($request['user_password']),
           'user_activation_code' => $activation_code
         ]);
-        
+
         $fname = $request['user_first_name'];
         $email = $request['user_email'];
 
@@ -39,7 +39,7 @@ class RegisterController extends Controller
         Mail::send('emails.activation', $data, function ($message) use ($data) {
           $message->to($data['email']);
           $message->from('esupport@bluecdf.gr');
-          $message->subject('Activate Your Account');
+          $message->subject('Ενεργοποίηση Λογαριασμού');
        });
 
         return response()->json([
